@@ -1,0 +1,203 @@
+/* Style general pentru pagină */
+body {
+	font-family: "Playfair Display", serif;
+	color: #ffffff;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    color: #3b2a47;
+}
+
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Stilizare pentru antetul paginii */
+header {
+	background-color: #c3a2e8;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 36px;
+	margin: 20px 0 20px 0;
+	color: rgb(252, 247, 247);
+}
+
+nav {
+	background-color: #de6d98;
+	padding: 20px;
+	text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+}
+
+nav ul li a:hover {
+	color: #fce8e4;
+}
+
+/* Stilizare pentru secțiunea de "Despre mine" */
+.about-me {
+	padding: 40px 20px;
+	text-align: center;
+	background-color: #de6d98;
+    color: rgb(246, 238, 238);
+}
+
+.about-me h2 {
+	font-size: 30px;
+	color: #faf7f6;
+}
+
+.about-me p {
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+/* Stilizare pentru secțiunea "Prețuri" */
+.prices {
+	padding: 40px 20px;
+	text-align: center;
+	background-color: #3b2a47;
+    color: rgb(246, 238, 238);
+}
+
+.prices h2 {
+	font-size: 30px;
+	color: #fce8e4;
+}
+
+.prices ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.prices ul li {
+	font-size: 20px;
+	padding: 10px 0;
+}
+
+/* Stilizare pentru secțiunea "Contact" */
+.contact {
+	padding: 40px 20px;
+	text-align: center;
+	background-color: #3b2a47;
+    color: rgb(246, 238, 238);
+}
+
+.contact h2 {
+	font-size: 30px;
+	color: #fce8e4;
+}
+
+.contact form {
+	display: inline-block;
+	text-align: left;
+	margin-top: 20px;
+}
+
+.contact input,
+.contact textarea {
+	width: 300px;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #c84375;
+	border-radius: 5px;
+	background-color: #1f2a47;
+	color: white;
+}
+
+.contact button {
+	padding: 10px 20px;
+	background-color: #c84375;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+.contact ul {
+	list-style: none;
+	padding: 0;
+}
+
+/* Stilizare pentru footer */
+footer {
+	background-color: #de6d98;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+footer p {
+	margin: 0;
+	font-size: 16px;
+}
+
+.image-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+}
+
+img {
+	border-radius: 15px;
+	height: auto;
+}
+
+.alb-negru:hover {
+	filter: grayscale(100%) brightness(80%) contrast(120%);
+}
+
+/* Contact page */
+.booking form {
+	display: flex;
+	flex-direction: column;
+	max-width: 400px;
+	justify-content: center;
+}
+
+.booking form input,
+.booking form select {
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.booking form input[type="submit"] {
+	margin-top: 20px;
+	background-color: #3b2a47;
+	color: #ffffff;
+	border: none;
+	padding: 10px;
+	width: 100px;
+	transition: 0.4s;
+}
+.booking form input[type="submit"]:hover {
+	background-color: #de6d98;
+}

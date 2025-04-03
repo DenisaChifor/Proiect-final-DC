@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Prețuri și Tipuri de Make-up</title>
+		<link rel="stylesheet" href="../CSS/style.css" />
+	</head>
+	<style>
+		.accordion {
+			background-color: #3b2a47;
+			color: #f7ebeb;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			transition: 0.4s;
+			border-bottom: 1px solid #ffffff;
+		}
+
+		.accordion:hover {
+			background-color: #de6d98;
+		}
+
+		.panel {
+			padding: 0 18px;
+			display: none;
+			background-color: rgb(232, 117, 175);
+			overflow: hidden;
+		}
+	</style>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="../index.html">Despre mine</a></li>
+					<li><a href="prices.html">Prețuri și Tipuri de Make-up</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<h1>Prețuri și Tipuri de Make-up</h1>
+		</header>
+		<main>
+			<section class="prices">
+				<div class="container">
+					<h2>Prețuri</h2>
+					<ul>
+						<li>Machiaj de zi: 100 lei</li>
+						<li>Machiaj de seară: 130 lei</li>
+						<li>Machiaj de nuntă: 160 lei</li>
+						<li>Machiaj mireasa: 200 lei</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="makeup-types">
+				<div class="container">
+					<h2>Tipuri de make-up</h2>
+
+					<p>
+						Ofer servicii de make-up pentru următoarele tipuri de evenimente:
+					</p>
+
+					<button class="accordion">Machiaj natural</button>
+					<div class="panel">
+						<p>
+							Machiajul natural este un stil de machiaj care pune accent pe
+							evidențierea trăsăturilor naturale ale feței, oferind un look
+							fresh, luminos și subtil, fără a încărca prea mult tenul sau
+							trăsăturile. Este ideal pentru look-uri de zi, dar și pentru
+							ocazii în care vrei să arăți bine, fără un machiaj foarte
+							încărcat.
+						</p>
+					</div>
+					<button class="accordion">Machiaj de seară</button>
+					<div class="panel">
+						<p>
+							Machiajul de seară este mai sofisticat și mai intens decât cel de
+							zi, având scopul de a crea un look elegant, dramatic sau
+							îndrăzneț, în funcție de ocazie. Acesta poate include culori mai
+							vibrante, mai multe tehnici de contur și iluminare, și un focus
+							mai mare pe ochi sau buze.
+						</p>
+					</div>
+					<button class="accordion">Machiaj de mireasa</button>
+					<div class="panel">
+						<p>
+							Machiajul de mireasă este un machiaj special, destinat să arate
+							impecabil și să reziste pe parcursul întregii zile, inclusiv în
+							momentele emoționante ale nunții. De obicei, machiajul de mireasă
+							este subtil și elegant, accentuând trăsăturile naturale ale
+							miresei, dar cu un finish impecabil care să arate bine în
+							fotografii.
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function () {
+					this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.display === "block") {
+						panel.style.display = "none";
+					} else {
+						panel.style.display = "block";
+					}
+				});
+			}
+		</script>
+		<footer>
+			<p>&copy; 2025 Denisa Chifor. Toate drepturile rezervate.</p>
+		</footer>
+	</body>
+</html>
